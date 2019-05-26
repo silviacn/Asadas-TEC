@@ -58,7 +58,7 @@
             $menu = "
             <li><a href='?pag=inicio'>Inicio</a></li>
             
-             <li><a href='?pag=master/tramites'>Formularios Generales</a> 
+             <li><a href='#'>Formularios Generales</a> 
                 <ul class='sub-nav'>
                     <li><a href='?pag=administrador/crear_tramite'>Crear Formularios</a><li>
                     <li><a href='?pag=administrador/tramites'>Ver Formularios</a><li>

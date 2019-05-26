@@ -18,7 +18,7 @@
         ?>
         <!--ANTES-->
         <hr>
-        <h3>Imagenes anteriores</h3>
+        <h3>Imágenes anteriores</h3>
         <?php if (file_exists($destino)){ ?>
             <center>
                 <img src='<?php echo $destino; ?>' style='width: 50%;'>
@@ -50,7 +50,7 @@
         } ?>
 
         <hr>
-        <h3>Imagenes posteriores</h3>
+        <h3>Imágenes posteriores</h3>
         <?php if (file_exists($destino)){ ?>
             <center>
                 <img src='<?php echo $destino; ?>' style='width: 50%;'>
@@ -61,7 +61,7 @@
             <form class="form-horizontal" action="?pag=<?php echo $_GET['pag']; ?>&formulario=<?php echo $_GET['formulario']; ?>&step=<?php echo $_GET['step']; ?>&anadir=1" method="post" enctype="multipart/form-data">
                 <center>
                     <br>
-                    <center><b>Subir Imagen</b></center>
+                    <center><b>Subir imagen</b></center>
                     <br><br>
                     <input name="nombre" type="file" class="form-control" style="width: 24%;" required/>
                     <br><br>
