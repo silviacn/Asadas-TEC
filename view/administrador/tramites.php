@@ -1,6 +1,6 @@
 <div class="page-404 padding ptb-xs-40">
     <div class="container" >
-        <center><h1>Visualizacion de tramites</h1></center>
+        <center><h1>Visualización de trámites</h1></center>
         <br>
         <table class="table table-striped">
           <tr class="warning">
@@ -15,9 +15,7 @@
             mysqli_query($link,"UPDATE `tramite` SET `estado_tramite`='".$_GET['estado']."' WHERE `id_tramite`='".$_GET['tramite']."' ");
             echo "<script>location.href='?pag=".$_GET['pag']."';</script>";
         }
-                $consulta = "SELECT tramite.id_tramite, tramite.nombre, tramite.descripcion, tramite.plantilla,asada.nombre as asada,tramite.estado_tramite FROM tramite,asada WHERE (tramite.id_asada = '".$_SESSION["asada"]."' or tramite.id_asada = 0) and tramite.estado_tramite = 1 and tramite.id_asada = asada.id_asada ORDER BY tramite.id_asada, tramite.id_tramite ASC
-                
-                
+                $consulta = "SELECT tramite.id_tramite, tramite.nombre, tramite.descripcion, tramite.plantilla,asada.nombre as asada,tramite.estado_tramite FROM tramite,asada WHERE (tramite.id_asada = '".$_SESSION["asada"]."' or tramite.id_asada = 0) and tramite.estado_tramite = 1 and tramite.id_asada = asada.id_asada ORDER BY tramite.id_asada, tramite.id_tramite ASC                            
                 ";
                 $sth = mysqli_query($link,$consulta);
 
@@ -34,10 +32,7 @@
                 $total_paginas = ceil(mysqli_num_rows($sth) / $TAMANO_PAGINA);
                 $consulta .=  " LIMIT ".$inicio."," . $TAMANO_PAGINA;
                 $sth = mysqli_query($link,$consulta);
-            
-            
-            
-            
+
             
                 while($r = mysqli_fetch_assoc($sth)) {
                     

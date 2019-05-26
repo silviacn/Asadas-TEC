@@ -122,7 +122,7 @@
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="textinput">Dirección exacta</label>  
                       <div class="col-md-4">
-                          <input name="direccion" type="text" placeholder="Teléfono" class="form-control input-md" required/>
+                          <input name="direccion" type="text" placeholder="Dirección exacta" class="form-control input-md" required/>
                       </div>
                     </div>
                     <div class="form-group">
@@ -198,7 +198,7 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="textinput">Nuevo Pass</label>  
+                      <label class="col-md-4 control-label" for="textinput">Nueva contraseña</label>  
                       <div class="col-md-4">
                           <input name="password" type="password" placeholder="Dejar en blanco para mantener" class="form-control input-md"/>
                       </div>
@@ -250,10 +250,10 @@
         <center>
             <form action="?pag=<?php echo $_GET['pag']; ?>&tipo=<?php echo $_GET['tipo']; ?>" class="form-horizontal" style="width: 50%;" method="post">
                     <div class="col-md-3">
-                        Busqueda
+                        Búsqueda
                     </div>
                     <div class="col-md-7">
-                    <input name="querry" type="text" placeholder="Busqueda"  <?php if(isset($_POST['querry'])){ echo 'value="'.$_POST['querry'].'"';} ?> class="form-control input-md" />
+                    <input name="querry" type="text" placeholder="Búsqueda"  <?php if(isset($_POST['querry'])){ echo 'value="'.$_POST['querry'].'"';} ?> class="form-control input-md" />
                     </div>
                     <div class="col-md-2">
                         <button class="btn btn-success" type="submit">Enviar</button>

@@ -159,7 +159,7 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="textinput">Nuevo Pass</label>  
+                      <label class="col-md-4 control-label" for="textinput">Nueva contraseña</label>  
                       <div class="col-md-4">
                           <input name="password" type="password" placeholder="Dejar en blanco para mantener" class="form-control input-md"/>
                       </div>

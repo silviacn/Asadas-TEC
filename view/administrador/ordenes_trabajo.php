@@ -1,6 +1,6 @@
 <div class="page-404 padding ptb-xs-40">
     <div class="container">
-            <center><h1>Ordenes de trabajo</h1></center>
+            <center><h1>Órdenes de trabajo</h1></center>
           <table class="table">        
         
             <table class="table">

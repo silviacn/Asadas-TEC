@@ -46,7 +46,7 @@
         </form>
         <?php }else { ?>
         <center>
-            <h1>Administracion de productos de inventario</h1>
+            <h1>Administración de productos de inventario</h1>
         </center>
         <center><a href="?pag=<?php echo $_GET['pag']; ?>&nuevo=1" class="btn btn-success" href="#">Nuevo Item</a></center>
         <br>
@@ -66,9 +66,6 @@
             <?php 
                      $consulta = "SELECT * FROM `producto` WHERE `id_asada` = '".$_SESSION["asada"]."'";
                     $sth = mysqli_query($link,$consulta);
-                     
-                     
-                     
                      
                     if (!isset($_GET["pagina"])) {
                         $inicio = 0;

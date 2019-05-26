@@ -131,10 +131,7 @@
                     $total_paginas = ceil(mysqli_num_rows($sth) / $TAMANO_PAGINA);
                     $consulta .=  " LIMIT ".$inicio."," . $TAMANO_PAGINA;
                     $sth = mysqli_query($link,$consulta);
-                     
-                     
-                     
-                     
+
                      
                      while($r = mysqli_fetch_assoc($sth)) {
                         echo '

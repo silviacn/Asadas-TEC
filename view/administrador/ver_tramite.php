@@ -74,7 +74,7 @@
                     </td>
                     <td>
                         <center>
-                            <b>Autorizo</b>
+                            <b>Autorizó</b>
                         </center>
                     </td>
                     <td>
@@ -128,19 +128,19 @@
                                 <?php if($datos_orden['estado'] != 1){ ?>
                                 <td>
                                     <center>
-                                        <a href="?pag=<?php echo $_GET['pag']; ?>&formulario=<?php echo $_GET['formulario']; ?>&actualizar=1" onclick="javascript: return confirm('¿Estas seguro?');" class="btn btn-info">Pendiente</a>
+                                        <a href="?pag=<?php echo $_GET['pag']; ?>&formulario=<?php echo $_GET['formulario']; ?>&actualizar=1" onclick="javascript: return confirm('¿Estás seguro?');" class="btn btn-info">Pendiente</a>
                                     </center>
                                 </td>
                                 <?php } if($datos_orden['estado'] != 2){ ?>
                                 <td>
                                     <center>
-                                        <a href="?pag=<?php echo $_GET['pag']; ?>&formulario=<?php echo $_GET['formulario']; ?>&actualizar=2" onclick="javascript: return confirm('¿Estas seguro?');" class="btn btn-success">Abierta</a>
+                                        <a href="?pag=<?php echo $_GET['pag']; ?>&formulario=<?php echo $_GET['formulario']; ?>&actualizar=2" onclick="javascript: return confirm('¿Estás seguro?');" class="btn btn-success">Abierta</a>
                                     </center>
                                 </td>
                                 <?php } if($datos_orden['estado'] != 3){ ?>
                                 <td>
                                     <center>
-                                        <a href="?pag=<?php echo $_GET['pag']; ?>&formulario=<?php echo $_GET['formulario']; ?>&actualizar=3" onclick="javascript: return confirm('¿Estas seguro?');" class="btn btn-danger">Cerrada</a>
+                                        <a href="?pag=<?php echo $_GET['pag']; ?>&formulario=<?php echo $_GET['formulario']; ?>&actualizar=3" onclick="javascript: return confirm('¿Estás seguro?');" class="btn btn-danger">Cerrada</a>
                                     </center>
                                 </td>
                                 <?php } ?>
@@ -205,7 +205,7 @@
                 echo '
                 <td><center>
                 <a href="?pag='.$_GET['pag'].'&formulario='.$_GET['formulario'].'&actualizar='.$datos['id_estado_solicitud'].'" 
-                onclick="javascript: return confirm('."'".'¿Estas seguro?'."'".');"  class="btn btn-'.$clase.'" href="#">'.$datos['nombre'].'</a>
+                onclick="javascript: return confirm('."'".'¿Estás seguro?'."'".');"  class="btn btn-'.$clase.'" href="#">'.$datos['nombre'].'</a>
                 </center>
                 </td>';
                 }
