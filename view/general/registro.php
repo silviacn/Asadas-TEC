@@ -118,7 +118,7 @@
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="textinput">Dirección exacta</label>  
                       <div class="col-md-4">
-                          <input name="direccion" type="text" placeholder="Dirección exacta" class="form-control input-md" required/>
+                        <textarea name="direccion" type="text" placeholder="Dirección exacta" class="form-control input-md" required></textarea>   
                       </div>
                     </div>
                     <div class="form-group">
